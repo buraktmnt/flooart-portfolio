@@ -1,8 +1,7 @@
 import React from 'react';
 import deviantartImg from '../assets/deviantart.png';
-import facebookImg from '../assets/facebook.png';
 import instagramImg from '../assets/instagram.png';
-import twitterImg from '../assets/twitter.png';
+import behanceImg from '../assets/behance.png';
 
 function Contact() {
   return (
@@ -27,7 +26,6 @@ function Contact() {
                 id='nameInput'
                 name='name'
                 placeholder='Name'
-                autocomplete='off'
                 className='w-full	inputNoOutline   '
               />
             </div>
@@ -38,7 +36,6 @@ function Contact() {
                 id='emailInput'
                 name='email'
                 placeholder='Email'
-                autocomplete='off'
                 className='w-full	 inputNoOutline     '
               />
             </div>
@@ -56,16 +53,28 @@ function Contact() {
           <div className=''>
             <h1 className='my-2 tracking-widest    text-2xl '>Follow me</h1>
             <div className='flex justify-center items-center'>
-              <a href='' className='mr-2'>
-                <img className=' h-10 w-10' src={facebookImg} alt='' />
-              </a>
-              <a href='' className='mx-2'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.instagram.com/floo_art/'
+                className='mx-2'
+              >
                 <img className=' h-10 w-10' src={instagramImg} alt='' />
               </a>
-              <a href='' className='mx-2'>
-                <img className=' h-10 w-10' src={twitterImg} alt='' />
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://www.behance.net/floolight'
+                className='mx-2'
+              >
+                <img className=' h-10 w-10' src={behanceImg} alt='' />
               </a>
-              <a href='' className='mx-2'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href='deviantart.com/nursgothic/gallery/all'
+                className='mx-2'
+              >
                 <img className=' h-10 w-10' src={deviantartImg} alt='' />
               </a>
             </div>
