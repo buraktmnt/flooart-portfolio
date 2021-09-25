@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #58798a;
+  background-color: #ebebeb;
+  font-family: 'Azeret Mono', monospace;
+}
+.colorPrimary {
+  color: #74838a;
+}
+.dancingScriptFont {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.6rem;
+  line-height: 2.5rem;
+}
+@font-face {
+  font-family: 'Tantinotes';
+  src: url('../src/fonts/Tantinotes.ttf') format('ttf');
+}
+.inputNoOutline:focus {
+  outline: 0px;
+  outline: rgba(255, 255, 255, 0);
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.inputNoOutline {
+  outline: 0px;
+  outline: rgba(255, 255, 255, 0);
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.imageDiv p {
+  opacity: 0;
+}
+.imageDiv:hover p {
+  opacity: 1;
+}
+.imageDiv:hover img {
+  filter: brightness(0.2);
+}
+.scrollTopButton {
+  bottom: 2rem;
+  right: 0.8rem;
+}
+.imgText {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+}
+.imageContainerGrid {
+  columns: 2 10rem;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  column-gap: 10px;
+}
+.imageContainerGrid div {
+  width: 170px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.imageContainerGrid div img {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  .scrollTopButton {
+    bottom: 2rem;
+    right: 0.7rem;
+    background-color: #ebebeb;
+  }
+}
+@media screen and (min-width: 768px) {
+  .scrollTopButton {
+    bottom: 2rem;
+    right: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .scrollTopButton {
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .imageContainerGrid {
+    columns: 3 10rem;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    column-gap: 10px;
+  }
+}
