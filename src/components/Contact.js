@@ -10,26 +10,26 @@ function Contact() {
         <div className='text-center w-8/12 sm:w-10/12 lg:w-6/12 xl:w-5/12'>
           <h1 className='tracking-widest  mb-10 text-2xl'>Send me an e-mail</h1>
           <form
-            action='https://formsubmit.co/burak.barbaros6@gmail.com'
+            action='https://formsubmit.co/nurselidibek@gmail.com'
             method='POST'
           >
             <input
               type='hidden'
               name='_next'
-              value='https://floolight.netlify.app/mail'
+              value='https://flooart.netlify.app/mail'
             />
             <input type='hidden' name='_captcha' value='false' />
-            <div className='mb-8'>
+            <div className='mb-4'>
               <input
                 required
                 type='text'
                 id='nameInput'
                 name='name'
                 placeholder='Name'
-                className='w-full	inputNoOutline   '
+                className='w-full	inputNoOutline 	 '
               />
             </div>
-            <div className='mb-8'>
+            <div className='mb-4'>
               <input
                 required
                 type='email'
@@ -44,38 +44,55 @@ function Contact() {
                 required
                 id='messageInput'
                 name='messageInput'
-                placeholder='message'
+                placeholder='Message'
                 className='inputNoOutline h-60 w-full '
               ></textarea>
             </div>
-            <button type='submit'>Send</button>
+            <button
+              type='submit'
+              className='rounded-md bg-white text-lg  tracking-widest py-2 px-8 mb-6 transition-all transform hover:scale-110'
+            >
+              Send
+            </button>
           </form>
-          <div className=''>
+          <div className='mt-5'>
             <h1 className='my-2 tracking-widest    text-2xl '>Follow me</h1>
             <div className='flex justify-center items-center'>
               <a
                 target='_blank'
                 rel='noreferrer'
                 href='https://www.instagram.com/floo_art/'
-                className='mx-2'
+                className='mx-2 transition-all transform hover:scale-110 filter hover:brightness-50'
               >
-                <img className=' h-10 w-10' src={instagramImg} alt='' />
+                <img
+                  className='primaryPngFilter h-10 w-10'
+                  src={instagramImg}
+                  alt=''
+                />
               </a>
               <a
                 target='_blank'
                 rel='noreferrer'
                 href='https://www.behance.net/floolight'
-                className='mx-2'
+                className='mx-2 transition-all transform hover:scale-110 filter hover:brightness-50 '
               >
-                <img className=' h-10 w-10' src={behanceImg} alt='' />
+                <img
+                  className='primaryPngFilter h-10 w-10  '
+                  src={behanceImg}
+                  alt=''
+                />
               </a>
               <a
                 target='_blank'
                 rel='noreferrer'
-                href='deviantart.com/nursgothic/gallery/all'
-                className='mx-2'
+                href='https://deviantart.com/nursgothic/gallery/all'
+                className='mx-2 transition-all transform hover:scale-110 filter hover:brightness-50'
               >
-                <img className=' h-10 w-10' src={deviantartImg} alt='' />
+                <img
+                  className='primaryPngFilter h-10 w-10'
+                  src={deviantartImg}
+                  alt=''
+                />
               </a>
             </div>
           </div>

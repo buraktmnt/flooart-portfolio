@@ -12,6 +12,9 @@ module.exports = {
       brightness: {
         20: '.20',
       },
+      colors: {
+        primary: '#74838a',
+      },
     },
   },
   variants: {

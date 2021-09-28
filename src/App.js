@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Contact from './components/Contact';
 import About from './components/About';
+import Error from './components/Error';
+import Mail from './components/Mail';
 import ScrollTopButton from './components/ScrollTopButton';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -22,6 +24,12 @@ function App() {
             </Route>
             <Route path='/about'>
               <About />
+            </Route>
+            <Route path='/mail'>
+              <Mail />
+            </Route>
+            <Route path='*'>
+              <Error />
             </Route>
           </Switch>
         </div>

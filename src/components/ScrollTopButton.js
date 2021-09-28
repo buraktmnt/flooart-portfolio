@@ -13,7 +13,7 @@ const ScrollButton = () => {
 
   return (
     <button className=' scrollTopButton fixed h-10 w-10' onClick={scrollToTop}>
-      <img src={bgImage} alt='' />
+      <img src={bgImage} alt='' className='primaryPngFilter ' />
     </button>
   );
 };
